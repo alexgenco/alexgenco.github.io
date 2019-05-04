@@ -4,19 +4,23 @@ description: Mostly for remembering things
 layout: default
 ---
 
-- ## Revert a range of commits
+### Revert a range of commits
 
 ```shell
 git revert OLDER_COMMIT^..NEWER_COMMIT
 ```
 
-- ## Get `readline` bindings
+---
+
+### Get `readline` bindings
 
 ```shell
 bind -p
 ```
 
-- ## Highlights from `bind -p`
+---
+
+### Highlights from `bind -p`
 
 | Binding         | Command                    | Meaning                                                 |
 |---              |---                         |---                                                      |
@@ -26,7 +30,9 @@ bind -p
 | `esc-.`         | `insert-last-argument`     | Put the last argument of the previous command at cursor |
 | `esc-t`         | `transpose-words`          | Swap word at cursor and the previous word               |
 
-- ## [Shell redirect to udp/tcp socket](https://www.anmolsarma.in/post/bash-net-redirections/)
+---
+
+### [Shell redirect to udp/tcp socket](https://www.anmolsarma.in/post/bash-net-redirections/)
 
 ```shell
 # udp
