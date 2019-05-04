@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>_ | alexgenco.github.io</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="_" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mostly for remembering things" />
+<meta property="og:description" content="Mostly for remembering things" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="alexgenco.github.io" />
+<script type="application/ld+json">
+{"headline":"_","url":"http://localhost:4000/","name":"alexgenco.github.io","description":"Mostly for remembering things","@type":"WebSite","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=9cccb440818ddbe8e4ca22c6a238b04026ed0020">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://localhost:4000/">alexgenco.github.io</a></h1>
+      
+
+      <h2 id="revert-a-range-of-commits">Revert a range of commits</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git revert OLDER_COMMIT^..NEWER_COMMIT
+</code></pre></div></div>
+
+<h2 id="shell-redirect-to-udptcp-socket-article">Shell redirect to udp/tcp socket (<a href="https://www.anmolsarma.in/post/bash-net-redirections/">article</a>)</h2>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># udp</span>
+<span class="nb">echo </span>ping <span class="o">&gt;</span> /dev/udp/127.0.0.1/1234
+
+<span class="c"># tcp</span>
+<span class="nb">echo </span>ping <span class="o">&gt;</span> /dev/tcp/127.0.0.1/1234
+</code></pre></div></div>
+
+<h2 id="readline-bindings">Readline bindings</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Binding</th>
+      <th>Command</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">ctrl-x ctrl-e</code></td>
+      <td><code class="highlighter-rouge">edit-and-execute-command</code></td>
+      <td>Open current command in <code class="highlighter-rouge">$EDITOR</code></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ctrl-x ctrl-u</code></td>
+      <td><code class="highlighter-rouge">undo</code></td>
+      <td>Undo last edit of this command line</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">esc-{</code></td>
+      <td><code class="highlighter-rouge">complete-into-braces</code></td>
+      <td>Put all possible bracket expansions at cursor</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">esc-.</code></td>
+      <td><code class="highlighter-rouge">insert-last-argument</code></td>
+      <td>Put the last argument of the previous command at cursor</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">esc-t</code></td>
+      <td><code class="highlighter-rouge">transpose-words</code></td>
+      <td>Swap word at cursor and the previous word</td>
+    </tr>
+  </tbody>
+</table>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  </body>
+</html>
