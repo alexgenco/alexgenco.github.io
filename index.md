@@ -1,5 +1,5 @@
 ---
-title: _
+title: alexgenco.github.io
 ---
 
 ## Revert a range of commits
@@ -7,6 +7,8 @@ title: _
 ```shell
 git revert OLDER_COMMIT^..NEWER_COMMIT
 ```
+
+---
 
 ## Shell redirect to udp/tcp socket ([article](https://www.anmolsarma.in/post/bash-net-redirections/))
 
@@ -18,6 +20,8 @@ echo ping > /dev/udp/127.0.0.1/1234
 echo ping > /dev/tcp/127.0.0.1/1234
 ```
 
+---
+
 ## Readline bindings
 
 | Binding         | Command                    | Meaning                                                 |
@@ -27,3 +31,5 @@ echo ping > /dev/tcp/127.0.0.1/1234
 | `esc-{`         | `complete-into-braces`     | Put all possible bracket expansions at cursor           |
 | `esc-.`         | `insert-last-argument`     | Put the last argument of the previous command at cursor |
 | `esc-t`         | `transpose-words`          | Swap word at cursor and the previous word               |
+
+---
