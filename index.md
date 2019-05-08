@@ -2,6 +2,22 @@
 title: alexgenco.github.io
 ---
 
+## Ruby function composition with `<<` and `>>` (requires Ruby 2.6)
+
+```ruby
+p1 = proc { |x| x + 1 }
+p2 = proc { |x| x * 2 }
+p3 = p1 >> p2
+p4 = p1 << p2
+
+p3.call(5) # => (5 + 1) * 2 = 12
+p4.call(5) # => (5 * 2) + 1 = 11
+```
+
+```shell
+git revert OLDER_COMMIT^..NEWER_COMMIT
+```
+
 ## Revert a range of commits
 
 ```shell
