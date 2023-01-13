@@ -30,7 +30,7 @@ A lot of things implement this trait; I think it's meant to be implemented on an
 
 Like `IntoResponse`, there are a lot of things that implement this trait. It seems like the general term for them are "extractors", because they extract information encoded in the request. For instance here's how you get the JSON request body:
 
-```
+```rust
 async fn json_handler(Json(my_struct): Json<MyStruct>) {
   // ...
 }
@@ -42,8 +42,7 @@ async fn json_handler(Json(my_struct): Json<MyStruct>) {
 
 Writing extractors is easy! You just need to implement either `FromRequest` or `FromRequestParts`. The latter is a little simpler I think. It has an associated type `Rejection`, which is sort of like the error type that is returned when the extractor fails, and which must implement our old friend `IntoResponse`. For example in my Twitter project I wrote a custom extractor for fetching OAuth user data from the session. _Buckle up_:
 
-```
-
+```rust
 #[async_trait]
 impl<S> FromRequestParts<S> for TwitterUser
 where
@@ -72,7 +71,7 @@ The interesting bit here is that you can call other extractors from within your 
 
 And finally, using the extractor in a handler is beautifully declarative:
 
-```
+```rust
 async fn handler(user: TwitterUser) -> impl IntoResponse {
   // ...
 }
