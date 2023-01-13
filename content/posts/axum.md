@@ -2,6 +2,8 @@
 title: "Axum"
 date: 2023-01-09T11:18:38-08:00
 draft: false
+tags:
+  - dev
 ---
 
 Alright FINE I'll write about software development. It only took me 2 freakin posts to run out of anything else to write about.

@@ -2,6 +2,10 @@
 title: "Hello World"
 date: 2022-12-31T01:01:00-08:00
 draft: false
+tags:
+  - music
+  - dev
+  - games
 ---
 
 Let's see if I can keep a blog going for the month of January. Here are some things I'd like to write about:

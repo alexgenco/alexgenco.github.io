@@ -1,7 +1,9 @@
 ---
 title: "Guitar Time"
-date: 2023-01-04:01:00-08:00
+date: 2023-01-04T01:01:00-08:00
 draft: false
+tags:
+  - music
 ---
 
 Happy New Year, readers! I have been really enjoying practicing guitar lately, so I will write about that.
