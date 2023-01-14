@@ -1,25 +1,8 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = '~ag'
-theme = 'cactus'
+theme = 'classic'
 copyright = 'Alex Genco'
 
-[params]
-mainSectionTitle = "Posts"
-
-[[params.social]]
-name = "github"
-link = "https://github.com/alexgenco"
-
-[[params.social]]
-name = "mastodon"
-link = "@genco@sfba.social"
-
-[[params.social]]
-name = "linkedin"
-link = "https://www.linkedin.com/in/alex-genco-82738116/"
-
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+[markup.goldmark.renderer]
+unsafe = true
