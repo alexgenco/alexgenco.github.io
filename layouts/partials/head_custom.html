@@ -10,14 +10,14 @@
       {{ range .Site.Menus.main }}
       {{ $name := lower .Name }}
       <li class="pull-left {{ if eq $name $title }}current{{ else if eq $section $name }}current{{ else if eq $title (pluralize $name) }}current{{ end }}">
-        <a href="{{ .URL }}">~{{ lower .Name }}</a>
+        <a href="{{ .URL }}">~/{{ lower .Name }}</a>
       </li>
       {{end}}
 
       {{ range .Site.Menus.feed }}
       {{ $name := lower .Name}}
       <li class="pull-right">
-        <a rel="me" href="{{ .URL }}">{{ lower .Name}}</a>
+        <a rel="me" href="{{ .URL }}">@{{ lower .Name}}</a>
       </li>
       {{end}}
 

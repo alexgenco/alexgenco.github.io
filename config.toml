@@ -7,32 +7,26 @@ theme = 'classic'
 unsafe = true
 
 [params]
-description = "A Blog About Nothing"
 custom_css = ["style.css"]
 footer = "© 2022 Alex Genco"
 
 [[menus.main]]
 weight = 1
-name = "about"
-url = "/about/"
-
-[[menus.main]]
-weight = 2
 name = "tags"
 url = "/tags/"
 
 [[menus.feed]]
 weight = 3
-name = "github"
+name = "gh"
 url = "https://github.com/alexgenco"
 
 [[menus.feed]]
 weight = 2
-name = "sourcehut"
-url = "https://sr.ht/~alexgenco"
+name = "ig"
+url = "https://www.instagram.com/alexgencoo/"
 
 [[menus.feed]]
 weight = 1
-name = "mastodon"
+name = "m"
 url = "https://sfba.social/@genco"
 rel = "me"
