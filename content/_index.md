@@ -2,4 +2,4 @@
 title: home
 ---
 
-A blog about nothing
+> One Day My Blog Will Have Something To Say About This
