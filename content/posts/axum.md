@@ -12,7 +12,9 @@ Alright FINE I'll write about software development. It only took me 2 freakin po
 
 I write a fair amount of Rust at work and try to keep up with hobby projects at home too. Recently I've been writing a website to download Twitter data for people who, like me, expect Twitter to crash and burn any day now but want to save all their funny Likes somewhere permanent. Like this one:
 
+{{< rawhtml >}}
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Hey Boy. Ya Jeans Look Shitted In</p>&mdash; wint (@dril) <a href="https://twitter.com/dril/status/1602613307134861312?ref_src=twsrc%5Etfw">December 13, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< /rawhtml >}}
 
 There were a few tools to do this out there already, but I either couldn't get them to work, they cost money, or they didn't save the data in a very helpful format. Anyway this project may never see the light of day, but I will at least put down some things I learned so far about the Axum web framework.
 
