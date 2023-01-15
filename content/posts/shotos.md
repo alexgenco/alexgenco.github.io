@@ -47,8 +47,9 @@ For most characters, there is no way to skip the cooldown animation unless an op
 
 There are of course some exceptions to these rules, mostly around down-smash:
 
-- Down-smash counts as a "normal" move for the purposes of normal canceling.
+- Down-smash is the only smash attack that can be canceled as a normal.
 - Down-smash can be canceled _while it's still charging_, that is, before any active frames have come out. Once you let go of the charge though, it follows the normal rules of requiring a hurt-box collision to be canceled.
+- For those of you who play with Final Smashes enabled, _any_ attack can be canceled into a Final Smash.
 
 I may have missed some rules/exceptions, but that's enough to get the basic idea.
 
