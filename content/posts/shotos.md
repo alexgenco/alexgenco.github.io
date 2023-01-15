@@ -1,6 +1,6 @@
 ---
 title: "Shotos"
-date: 2023-01-14T17:56:25-08:00
+date: 2023-01-15T11:15:45-08:00
 tags:
   - games
 draft: false
