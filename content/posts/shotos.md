@@ -67,31 +67,34 @@ If performed correctly, you will skip the cooldown animation and immediately per
 
 At this point, you can basically mix-and-match your normals and your specials into infinite combinations, although some work better than others. Here are some of the most common:
 
-- Down-tilt (heavy) -> Hadoken (↓ → + A/B)
+### Down-tilt (heavy) -> Hadoken (↓ → + A/B)
 
 {{< rawhtml >}}
-<video width="80%" onclick="togglePlay(this)">
+<video onclick="togglePlay(this)">
   <source src="/videos/dtilt-hado.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+<br />
 {{< /rawhtml >}}
 
-- Down-tilt (light or heavy) -> Tatsumaki Senpukyaku (↓ ← + A/B)
+### Down-tilt (light or heavy) -> Tatsumaki Senpukyaku (↓ ← + A/B)
 
 {{< rawhtml >}}
-<video width="80%" onclick="togglePlay(this)">
+<video onclick="togglePlay(this)">
   <source src="/videos/dtilt-tatsu.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+<br />
 {{< /rawhtml >}}
 
-- Jab (heavy+close) -> Shoryuken (→ ↓ ↘ + A/B)
+### Jab (heavy+close) -> Shoryuken (→ ↓ ↘ + A/B)
 
 {{< rawhtml >}}
-<video width="80%" onclick="togglePlay(this)">
+<video onclick="togglePlay(this)">
   <source src="/videos/jab-shoryu.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+<br />
 {{< /rawhtml >}}
 
 Now go get good!
