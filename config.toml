@@ -1,8 +1,16 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = '~ag'
+title = 'ag'
 theme = 'classic'
-copyright = 'Alex Genco'
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[params]
+description = "A Blog About Nothing"
+custom_css = ["style.css"]
+footer = """
+[GitHub](https://github.com/alexgenco) |
+<a rel="me" href="https://sfba.social/@genco">Mastodon</a> |
+[Soundcloud](https://soundcloud.com/ricky-ricky-rice)
+"""
