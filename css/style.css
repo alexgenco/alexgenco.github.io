@@ -1,3 +1,22 @@
+/* Fonts */
+@import url('https://rsms.me/inter/inter.css');
+html { font-family:
+        'Inter',
+        sans-serif,
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol';
+      }
+@supports (font-variation-settings: normal) {
+  html { font-family:
+          'Inter var',
+          sans-serif,
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol';
+        }
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
@@ -16,7 +35,6 @@
     header {
       background: #393E41;
       border-bottom: 2px dotted #EBC3DB;
-
     }
 
     .article-meta, .menu a {
@@ -32,9 +50,7 @@
     table thead th { border-bottom: 1px solid #666; }
     th, td { padding: 5px; }
     tr:nth-child(even) { background: #666 }
-
 }
-
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
@@ -62,10 +78,8 @@
     }
     table thead th { border-bottom: 1px solid #ddd; }
     th, td { padding: 5px; }
-    tr:nth-child(even) { background: #eee }
-
+    tr:nth-child(even) { background: #eee; }
 }
-
 
 body {
   max-width: 800px;
@@ -130,6 +144,7 @@ header {
     width: 100%;
     height: 1.75rem;
     font-size: 1rem;
+    margin-bottom: 2ch;
 }
 
 header ul,
@@ -153,6 +168,10 @@ header .current a {
 }
 
 /* Code Boxes */
+code {
+  font-family: monospace;
+  line-height: normal;
+}
 pre {
   border: 2px solid #EBC3DB;
   padding: 1em;
