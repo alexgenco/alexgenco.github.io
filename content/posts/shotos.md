@@ -6,6 +6,14 @@ tags:
 draft: false
 ---
 
+{{< rawhtml >}}
+<script>
+function togglePlay(video) {
+  video.paused ? video.play() : video.pause();
+}
+</script>
+{{< /rawhtml >}}
+
 There's a little bit of debate about the definition of "Shotos", but for the purposes of this post (and I'd argue in general when talking about Smash Bros. Ultimate), it refers to Ryu and Ken. Here are some huge pictures of them that I don't want to learn how to resize:
 
 ![Ryu](https://ssb.wiki.gallery/images/thumb/6/61/Ryu_SSBU.png/500px-Ryu_SSBU.png)
@@ -62,27 +70,27 @@ At this point, you can basically mix-and-match your normals and your specials in
 - Down-tilt (heavy) -> Hadoken (↓ → + A/B)
 
 {{< rawhtml >}}
-<video width=50% controls>
-    <source src="/videos/dtilt-hado.mp4" type="video/mp4">
-    Your browser does not support the video tag.  
+<video width="80%" onclick="togglePlay(this)">
+  <source src="/videos/dtilt-hado.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
 {{< /rawhtml >}}
 
 - Down-tilt (light or heavy) -> Tatsumaki Senpukyaku (↓ ← + A/B)
 
 {{< rawhtml >}}
-<video width=50% controls>
-    <source src="/videos/dtilt-tatsu.mp4" type="video/mp4">
-    Your browser does not support the video tag.  
+<video width="80%" onclick="togglePlay(this)">
+  <source src="/videos/dtilt-tatsu.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
 {{< /rawhtml >}}
 
 - Jab (heavy+close) -> Shoryuken (→ ↓ ↘ + A/B)
 
 {{< rawhtml >}}
-<video width=50% controls>
-    <source src="/videos/jab-shoryu.mp4" type="video/mp4">
-    Your browser does not support the video tag.  
+<video width="80%" onclick="togglePlay(this)">
+  <source src="/videos/jab-shoryu.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
 {{< /rawhtml >}}
 
