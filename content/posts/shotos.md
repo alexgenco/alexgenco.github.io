@@ -67,6 +67,8 @@ If performed correctly, you will skip the cooldown animation and immediately per
 
 At this point, you can basically mix-and-match your normals and your specials into infinite combinations, although some work better than others. Here are some of the most common:
 
+**(Click on videos to play)**
+
 ### Down-tilt (heavy) -> Hadoken (↓ → + A/B)
 
 {{< rawhtml >}}
