@@ -1,6 +1,7 @@
 baseURL = 'https://alexgenco.github.io/'
 languageCode = 'en-us'
 copyright = "2022 Alex Genco"
+summaryLength = 20
 title = 'ag'
 theme = 'ag'
 
