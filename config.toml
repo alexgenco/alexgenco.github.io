@@ -1,7 +1,12 @@
 baseURL = 'https://alexgenco.github.io/'
 languageCode = 'en-us'
+copyright = "2022 Alex Genco"
 title = 'ag'
 theme = 'ag'
+
+[author]
+name = "Alex Genco"
+email = "alexgenco@gmail.com"
 
 [markup.goldmark.renderer]
 unsafe = true
