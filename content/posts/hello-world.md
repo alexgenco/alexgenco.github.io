@@ -6,6 +6,7 @@ tags:
   - music
   - dev
   - games
+  - movies
 ---
 
 Let's see if I can keep a blog going for the month of January. Here are some things I'd like to write about:
