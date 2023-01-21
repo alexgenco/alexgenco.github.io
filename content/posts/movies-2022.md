@@ -24,6 +24,12 @@ If you know me, you know this is my favorite type of movie. It's slow and quiet 
 
 I also watched McDonagh's "In Bruges" for the first time before watching this. It's a nice companion movie if you're into the Collin Firth - Brendan Gleeson chemistry.
 
+## Memoria
+
+Speaking of quietly intense! This one _cooks_. It's sooo slow... I could almost hear the actors like, counting to 30 before saying the next line. In one scene, you literally watch a dude take a nap. And also, (**slight spoiler alert** stop reading if you want to avoid it), it had one of my favorite things in movies (or pretty much any narrative art), which is hard for me to explain, but basically when they drop a _tiny_ morsel that suggests the plot was operating at an entirely different layer than you thought (often other-worldly or supernatural). I love this because it makes you immediately rethink the entire movie, and subsequent viewings are like a different movie altogether.
+
+I'm glad I caught this one because I learned afterwards that it's purposefully never going to be released on streaming services. I'd love a re-watch if it's ever showing again, but for now I'm just gonna have to let it stew.
+
 ## Everything Everywhere All At Once
 
 Possibly the opposite movie of "Banshees"? This one felt like 6 movies playing on top of each other. We watched it a second time with my father-in-law and he was losing his mind for the first hour and then fell asleep. Great film.
@@ -34,12 +40,4 @@ This is a good one to snuggle up and get real _sleepy_ to. I think there was onl
 
 ## Marcel the Shell with Shoes On
 
-I didn't see this movie. I just wanted to bring it up because the trailer made me nauseous and that seems notable.
-
-## The Northman
-
-I don't listen to Metal, but this movie made me want to.
-
-## Decision to Leave
-
-A murder mystery that cooks frfr
+I didn't see this movie. I just wanted to bring it up because the trailer made me nauseous. I think the voice is like, too small if that makes sense?
