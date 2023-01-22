@@ -42,7 +42,7 @@ What's the opposite of "quietly intense"? This one felt like 6 movies playing on
 
 ## Fire of Love
 
-This is a good one to snuggle up and get real _sleepy_ to. I think there was only one other person at the theater when my wife and I saw this. Extremely meditative, beautiful, haunting. The volcano footage is absolutely unreal. And the whole thing feels like watching ghosts, because you KNOW these folks died doing this (and it's in the movie's description, so not a spoiler).
+This is a good one to snuggle up and get real _sleepy_ to. I think there was only one other person at the theater when my wife and I saw this. Extremely meditative, beautiful, haunting. The volcano footage is absolutely unreal. And the whole thing feels like watching ghosts, because you KNOW these folks were killed by a volcano (and it's in the movie's description, so not a spoiler).
 
 ## Nope
 
