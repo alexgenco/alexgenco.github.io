@@ -54,7 +54,7 @@ I saw this twice and loved it twice. This is probably my favorite movie moment o
 
 **slight spoiler**
 
-I haven't seen many Alien movies, but IMO this one has the best alien reveal since Signs. They just give you little snippets until you think you're never going to see it and then BAM. This one's a little different though, for reasons that go beyond "slight" spoiler territory.
+I haven't seen many alien movies, but IMO this one has the best alien reveal since Signs. They just give you little snippets until you think you're never going to see it and then BAM. This one's a little different though, for reasons that go beyond "slight" spoiler territory.
 
 **end spoiler**
 
