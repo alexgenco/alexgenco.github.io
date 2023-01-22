@@ -44,6 +44,22 @@ What's the opposite of "quietly intense"? This one felt like 6 movies playing on
 
 This is a good one to snuggle up and get real _sleepy_ to. I think there was only one other person at the theater when my wife and I saw this. Extremely meditative, beautiful, haunting. The volcano footage is absolutely unreal. And the whole thing feels like watching ghosts, because you KNOW these folks died doing this (and it's in the movie's description, so not a spoiler).
 
+## Nope
+
+I saw this twice and loved it twice. This is probably my favorite movie moment of 2022 (I'm not going to learn how to make this a normal size):
+
+{{< rawhtml >}}
+<iframe src="https://www.youtube-nocookie.com/embed/irFbw7-ox7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< /rawhtml >}}
+
+**slight spoiler**
+
+I haven't seen many Alien movies, but IMO this one has the best alien reveal since Signs. They just give you little snippets until you think you're never going to see it and then BAM. This one's a little different though, for reasons that go beyond "slight" spoiler territory.
+
+**end spoiler**
+
+Anyway, go see it.
+
 ## Marcel the Shell with Shoes On
 
 I didn't see this movie. I just wanted to bring it up because the trailer made me nauseous. I think the voice is like, too small if that makes sense?
