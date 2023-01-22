@@ -1,5 +1,5 @@
 ---
-title: home
+title: posts
 ---
 
-> One Day My Blog Will Have Something To Say About This
+> One day my blog will have something to say about this

@@ -10,7 +10,9 @@
     <title>{{ .Title | lower }} | ~{{ .Site.Title }}</title>
     {{ end }}
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <!--
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+    -->
     <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/index.xml" title="ag blog">
   </head>
 
@@ -23,18 +25,32 @@
           <li class="pull-left {{ if .IsHome }}current{{ end }}">
             <a href="{{ .Site.BaseURL }}">~</a>
           </li>
+
           {{ range .Site.Menus.main }}
-          {{ $name := lower .Name }}
-          <li class="pull-left {{ if eq $name $title }}current{{ else if eq $section $name }}current{{ else if eq $title (pluralize $name) }}current{{ end }}">
+          <li>
             <a href="{{ .URL }}">~/{{ lower .Name }}</a>
           </li>
           {{end}}
 
           {{ range .Site.Menus.socials }}
-          <li class="pull-right">
-            <a rel="me" href="{{ .URL }}">@{{ lower .Name}}</a>
+          <li>
+            <a rel="me" href="{{ .URL }}">@{{ lower .Name }}</a>
           </li>
           {{end}}
         </ul>
       </nav>
     </header>
+
+    <main>
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+
+    <footer>
+      {{ with .Site.Params.footer }}
+      <hr/>
+      {{ . | markdownify }}
+      {{ end }}
+    </footer>
+  </body>
+</html>

@@ -1,26 +1,30 @@
-{{ partial "header.html" . }}
-<div class="article-meta">
-<h1><span class="title">{{ .Title | markdownify }}</span></h1>
-{{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
-{{ if .Params.date }}<h2 class="date">{{ .Date.Format "2006/01/02" }}</h2>{{ end }}
-<p class="terms">
-  {{ range $i := (slice "categories" "tags") }}
-  {{ with ($.Param $i) }}
-  {{ $i | title }}: {{ range $k := . }}<a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a> {{ end }}
-  {{ end }}
-  {{ end }}
-</p>
-</div>
+{{ define "main" }}
+<article>
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.date }}
+    <h2>{{ .Date.Format "2006/01/02" }}</h2>
+    {{ end }}
 
-{{ if .Params.toc }}
-{{ .TableOfContents }}
+    <ul>
+      {{ range $i := (slice "categories" "tags") }}
+      {{ with ($.Param $i) }}
+      {{ $i | title }}: {{ range $k := . }}
+      <li>
+        <a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a>
+      </li>
+      {{ end }}
+      {{ end }}
+      {{ end }}
+    </ul>
+  </header>
+
+  {{ .Content }}
+</article>
+
+<nav>
+  <a href="/">home</a>
+  |
+  <a href="#top">top</a>
+</nav>
 {{ end }}
-<div class="content-wrapper">
-  <main>
-    {{ .Content }}
-    <a href="/">home</a>
-    |
-    <a href="#top">top</a>
-  </main>
-</div>
-{{ partial "footer.html" . }}

@@ -1,25 +1,20 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
+{{ .Content }}
 
-<div class="content-wrapper">
-  {{if not .IsHome }}
-  <h1>{{ .Title | markdownify }}</h1>
-  {{ end }}
-
-  {{ .Content }}
-
+<nav>
   <ul>
-     {{ $pages := .Pages }}
-     {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-     {{ range (where $pages "Section" "!=" "") }}
-     <li>
-       <h4>
-        <span class="date">{{ .Date.Format "2006/01/02" }}</span>
-        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-       </h4>
+    {{ $pages := .Pages }}
+    {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
+    {{ range (where $pages "Section" "!=" "") }}
+    <li>
+      <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+      <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
 
-       <p>{{ .Summary }}{{ if .Truncated }}...{{ end }} <a href="{{ .RelPermalink }}">more &raquo;</a></p>
-     </li>
-     {{ end }}
-   </ul>
-</div>
-{{ partial "footer.html" . }}
+      <p>{{ .Summary }}{{ if .Truncated }}...{{ end }}
+        <a href="{{ .RelPermalink }}">more &raquo;</a>
+      </p>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}
