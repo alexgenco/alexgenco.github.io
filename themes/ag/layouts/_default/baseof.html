@@ -10,36 +10,34 @@
     <title>{{ .Title | lower }} | ~{{ .Site.Title }}</title>
     {{ end }}
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-    <!--
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
-    -->
     <link rel="alternate" type="application/rss+xml" href="{{ .Site.BaseURL }}/index.xml" title="ag blog">
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ul>
-          {{ $title := lower .Title }}
-          {{ $section := lower .Section }}
-          <li class="pull-left {{ if .IsHome }}current{{ end }}">
-            <a href="{{ .Site.BaseURL }}">~</a>
-          </li>
+    <nav class="nav-top">
+      <ul class="nav-links">
+        {{ $title := lower .Title }}
+        {{ $section := lower .Section }}
+        <li class="nav-item">
+          <a href="{{ .Site.BaseURL }}">~</a>
+        </li>
 
-          {{ range .Site.Menus.main }}
-          <li>
-            <a href="{{ .URL }}">~/{{ lower .Name }}</a>
-          </li>
-          {{end}}
+        {{ range .Site.Menus.main }}
+        <li class="nav-item">
+          <a href="{{ .URL }}">~/{{ lower .Name }}</a>
+        </li>
+        {{end}}
+      </ul>
 
-          {{ range .Site.Menus.socials }}
-          <li>
-            <a rel="me" href="{{ .URL }}">@{{ lower .Name }}</a>
-          </li>
-          {{end}}
-        </ul>
-      </nav>
-    </header>
+      <ul class="nav-links">
+        {{ range .Site.Menus.socials }}
+        <li class="nav-item">
+          <a rel="me" href="{{ .URL }}">@{{ lower .Name }}</a>
+        </li>
+        {{end}}
+      </ul>
+    </nav>
 
     <main>
       {{ block "main" . }}

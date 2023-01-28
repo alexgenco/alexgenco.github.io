@@ -6,25 +6,32 @@
     <h2>{{ .Date.Format "2006/01/02" }}</h2>
     {{ end }}
 
-    <ul>
-      {{ range $i := (slice "categories" "tags") }}
-      {{ with ($.Param $i) }}
-      {{ $i | title }}: {{ range $k := . }}
-      <li>
-        <a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a>
-      </li>
-      {{ end }}
-      {{ end }}
-      {{ end }}
-    </ul>
+    <nav class="nav-post-tags">
+      <ul class="post-tag-links">
+        {{ range $i := (slice "categories" "tags") }}
+        {{ with ($.Param $i) }}
+        {{ range $k := . }}
+        <li class="post-tag-item">
+          <a href="{{ relURL (print "/" $i "/" $k | urlize) }}">{{ $k }}</a>
+        </li>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </ul>
+    </nav>
   </header>
 
   {{ .Content }}
 </article>
 
-<nav>
-  <a href="/">home</a>
-  |
-  <a href="#top">top</a>
+<nav class="nav-post-footer">
+  <ul class="post-footer-links">
+    <li class="post-footer-item">
+      <a href="/">home</a>
+    </li>
+    <li class="post-footer-item">
+      <a href="#top">top</a>
+    </li>
+  </ul>
 </nav>
 {{ end }}
