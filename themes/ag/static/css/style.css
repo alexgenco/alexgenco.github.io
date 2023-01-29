@@ -5,6 +5,7 @@
   --font-size: 18px;
   --bg-color: white;
   --fg-color-1: #613DC1;
+  --fg-color-2: #E8DBC5;
 }
 
 /* https://www.joshwcomeau.com/css/custom-css-reset */
@@ -45,6 +46,10 @@ a, a:visited, a:active, a:hover {
   color: var(--fg-color-1);
 }
 
+h1, h2, h3 {
+  padding: 1.5ch 0 0.5ch 0;
+}
+
 .main-header {
   background: var(--fg-color-1);
   border-bottom: thin solid black;
@@ -78,6 +83,7 @@ a, a:visited, a:active, a:hover {
 main {
   max-width: var(--width);
   margin: auto;
+  padding: 1ch;
 }
 
 .post-tag-links {
@@ -100,10 +106,11 @@ main {
 
 .post-footer-item {
   display: inline-block;
+  padding: 1.5ch 0 0.5ch 0;
 }
 
 .main-footer {
-  margin-top: 3ch;
+  margin-top: 2ch;
   border-top: thin solid black;
 }
 
@@ -114,5 +121,31 @@ main {
 }
 
 .main-footer-item {
-  margin: 1ch;
+  margin: 1ch 0 1ch 0;
+}
+
+.post-header {
+  display: flex;
+  margin-bottom: 2ch;
+  background: var(--fg-color-2);
+  padding: 1ch;
+  border: thin dotted black;
+  border-radius: 0.5ch;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-header-item {
+  font-size: var(--font-size);
+  padding: 0.1ch;
+}
+
+.post-header h1 {
+  font-size: 2rem;
+}
+
+.nav-post-tags {
+  font-size: 1rem;
+  font-style: italic;
 }
