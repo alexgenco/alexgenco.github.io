@@ -15,27 +15,27 @@
   </head>
 
   <body>
-    <nav class="nav-top">
-      <ul class="nav-links">
+    <nav class="main-nav">
+      <ul class="main-nav-links">
         {{ $title := lower .Title }}
         {{ $section := lower .Section }}
-        <li class="nav-item">
+        <li class="main-nav-item">
           <a href="{{ .Site.BaseURL }}">~</a>
         </li>
 
         {{ range .Site.Menus.main }}
-        <li class="nav-item">
+        <li class="main-nav-item">
           <a href="{{ .URL }}">~/{{ lower .Name }}</a>
         </li>
         {{end}}
       </ul>
 
-      <ul class="nav-links">
+      <ul class="main-nav-links">
         {{ range .Site.Menus.socials }}
-        <li class="nav-item">
+        <li class="main-nav-item">
           <a rel="me" href="{{ .URL }}">@{{ lower .Name }}</a>
         </li>
-        {{end}}
+        {{ end }}
       </ul>
     </nav>
 
@@ -44,11 +44,12 @@
       {{ end }}
     </main>
 
-    <footer>
-      {{ with .Site.Params.footer }}
-      <hr/>
-      {{ . | markdownify }}
-      {{ end }}
+    <footer class="main-footer">
+      <div class="main-footer-items">
+        <p class="main-footer-item">
+          {{ .Site.Params.footer }}
+        </p>
+      </div>
     </footer>
   </body>
 </html>
