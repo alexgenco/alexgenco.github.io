@@ -4,42 +4,66 @@
   --width: 700px;
   --font-size: 18px;
   --bg-color: white;
-  --accent-color-1: #613DC1;
+  --fg-color-1: #613DC1;
+}
+
+/* https://www.joshwcomeau.com/css/custom-css-reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
 }
 
 body {
-  margin: 0;
   background: var(--bg-color);
   font-size: var(--font-size);
   font-family: 'Inter', sans-serif;
 }
 
-ul {
-  padding: 0;
+a, a:visited, a:active, a:hover {
+  color: var(--fg-color-1);
 }
 
-a, a:visited, a:active, a:hover {
-  color: var(--accent-color-1);
+.main-header {
+  background: var(--fg-color-1);
+  border-bottom: thin solid black;
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background: var(--accent-color-1);
-  border-bottom: thin solid black;
-}
-
-.main-nav-links {
-  display: flex;
-  align-items: center;
   max-width: var(--width);
   margin: auto;
 }
 
+.main-nav-links {
+  padding: inherit;
+}
+
 .main-nav-item {
   display: inline-block;
-  padding: 1ch;
+  padding: 0.5ch;
 }
 
 .main-nav-item a {
@@ -59,6 +83,7 @@ main {
 .post-tag-links {
   display: flex;
   align-items: center;
+  padding: inherit;
   gap: 1ch;
 }
 
@@ -69,6 +94,7 @@ main {
 .post-footer-links {
   display: flex;
   align-items: center;
+  padding: inherit;
   gap: 1ch;
 }
 

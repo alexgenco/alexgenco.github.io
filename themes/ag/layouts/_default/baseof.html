@@ -15,29 +15,31 @@
   </head>
 
   <body>
-    <nav class="main-nav">
-      <ul class="main-nav-links">
-        {{ $title := lower .Title }}
-        {{ $section := lower .Section }}
-        <li class="main-nav-item">
-          <a href="{{ .Site.BaseURL }}">~</a>
-        </li>
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="main-nav-links">
+          {{ $title := lower .Title }}
+          {{ $section := lower .Section }}
+          <li class="main-nav-item">
+            <a href="{{ .Site.BaseURL }}">~</a>
+          </li>
 
-        {{ range .Site.Menus.main }}
-        <li class="main-nav-item">
-          <a href="{{ .URL }}">~/{{ lower .Name }}</a>
-        </li>
-        {{end}}
-      </ul>
+          {{ range .Site.Menus.main }}
+          <li class="main-nav-item">
+            <a href="{{ .URL }}">~/{{ lower .Name }}</a>
+          </li>
+          {{end}}
+        </ul>
 
-      <ul class="main-nav-links">
-        {{ range .Site.Menus.socials }}
-        <li class="main-nav-item">
-          <a rel="me" href="{{ .URL }}">@{{ lower .Name }}</a>
-        </li>
-        {{ end }}
-      </ul>
-    </nav>
+        <ul class="main-nav-links">
+          {{ range .Site.Menus.socials }}
+          <li class="main-nav-item">
+            <a rel="me" href="{{ .URL }}">@{{ lower .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </header>
 
     <main>
       {{ block "main" . }}
