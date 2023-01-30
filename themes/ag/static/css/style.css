@@ -142,7 +142,7 @@ main {
 
 .post-header {
   display: flex;
-  margin-bottom: 2ch;
+  margin: 2ch 0 2ch 0;
   background: var(--fg-color-2);
   padding: 1ch;
   border: thin dotted black;
