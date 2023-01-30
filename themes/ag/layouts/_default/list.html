@@ -1,17 +1,17 @@
 {{ define "main" }}
 {{ .Content }}
 
-<nav>
-  <ul>
-    {{ $pages := .Pages }}
-    {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-    {{ range (where $pages "Section" "!=" "") }}
-    <li>
-      <span class="date">{{ .Date.Format "2006/01/02" }}</span>
-      <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+<nav class="posts-nav">
+  <ul class="posts-nav-items">
+    {{ $pages := where site.RegularPages "Type" "posts" }}
+    {{ range $pages }}
+    <li class="posts-nav-item">
+      <a class="posts-nav-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      [<span class="posts-nav-date">{{ .Date.Format "01/02/06" }}</span>]
 
-      <p>{{ .Summary }}{{ if .Truncated }}...{{ end }}
-        <a href="{{ .RelPermalink }}">more &raquo;</a>
+      <p class="posts-nav-summary">
+        {{ trim .Summary "." | safeHTML }}&hellip;
+        <a class="posts-nav-summary-more" href="{{ .RelPermalink }}">more &raquo;</a>
       </p>
     </li>
     {{ end }}

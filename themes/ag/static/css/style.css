@@ -46,8 +46,24 @@ a, a:visited, a:active, a:hover {
   color: var(--fg-color-1);
 }
 
-h1, h2, h3 {
-  padding: 1.5ch 0 0.5ch 0;
+h1, h2, h3, p {
+  padding: 1ch 0 0.5ch 0;
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+  margin: 2ch;
+  padding: 1ch;
+  font-style: italic;
+}
+
+pre code {
+  display: block;
+  border: thin dotted black;
+  line-height: 1.2;
+  margin: 2ch 0 2ch 0;
+  padding: 1ch;
+  overflow-x: scroll;
 }
 
 .main-header {
@@ -145,7 +161,23 @@ main {
   font-size: 2rem;
 }
 
-.nav-post-tags {
+.post-tags-nav {
   font-size: 1rem;
   font-style: italic;
+}
+
+.posts-nav-date {
+  font-style: italic;
+}
+
+.posts-nav-title {
+  font-weight: bold;
+}
+
+.posts-nav-item {
+  padding: 1ch;
+}
+
+.posts-nav-summary-more {
+  white-space: nowrap;
 }

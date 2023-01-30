@@ -12,6 +12,9 @@ email = "alexgenco@gmail.com"
 [markup.goldmark.renderer]
 unsafe = true
 
+[markup.highlight]
+style = "algol_nu"
+
 [params]
 footer = "© 2022 Alex Genco"
 
