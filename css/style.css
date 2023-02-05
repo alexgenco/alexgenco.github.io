@@ -72,6 +72,10 @@ main {
   padding: 4ch 1ch 0 1ch;
 }
 
+hr {
+  margin: 2ch 0 2ch 0;
+}
+
 .main-header {
   position: fixed;
   top: 0;
