@@ -2,6 +2,7 @@
 
 :root {
   --width: 700px;
+  --font: Inter, sans-serif;
   --font-size: 18px;
   --bg-color: white;
   --fg-color-1: #613DC1;
@@ -38,8 +39,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   background: var(--bg-color);
+  font-family: var(--font);
   font-size: var(--font-size);
-  font-family: 'Inter', sans-serif;
 }
 
 a, a:visited, a:active, a:hover {
@@ -69,7 +70,7 @@ pre code {
 main {
   max-width: var(--width);
   margin: auto;
-  padding: 4ch 1ch 0 1ch;
+  padding: 1ch;
 }
 
 hr {
@@ -81,11 +82,7 @@ img {
 }
 
 .main-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
   background: var(--fg-color-1);
-  border-bottom: thin solid black;
 }
 
 .main-nav {
