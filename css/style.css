@@ -156,7 +156,7 @@ img {
 
 .post-header {
   display: flex;
-  margin: 2ch 1ch 2ch 0;
+  margin: 2ch 0.5ch 2ch 0;
   border: thin solid var(--fg-color-0);
   box-shadow: 8px 8px var(--fg-color-2);
   flex-direction: column;
