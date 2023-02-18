@@ -1,8 +1,12 @@
-@import url('https://rsms.me/inter/inter.css');
+@font-face {
+  font-family: 'Berkeley Mono';
+  src:  url('fonts/BerkeleyMonoVariable-Regular.woff2') format('woff2'),
+        url('fonts/BerkeleyMonoVariable-Regular.woff') format('woff');
+}
 
 :root {
   --width: 700px;
-  --font: Inter, sans-serif;
+  --font: "Berkeley Mono", sans-serif;
   --font-size: 18px;
   --bg-color: white;
   --fg-color-1: #613DC1;
