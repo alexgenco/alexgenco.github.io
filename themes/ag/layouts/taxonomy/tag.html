@@ -1,18 +1,16 @@
 {{ define "main" }}
 {{ .Content }}
 
+<header class="post-header">
+  <h1 class="post-header-item">[{{ .Title | lower }}]</h1>
+</header>
+
 <nav class="posts-nav">
   <ul class="posts-nav-items">
-    {{ $pages := where .Site.RegularPages "Type" "posts" }}
-    {{ range $pages }}
+    {{ range .Data.Pages }}
     <li class="posts-nav-item">
       <a class="posts-nav-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
       [<span class="posts-nav-date">{{ .Date.Format "01/02/06" }}</span>]
-
-      <p class="posts-nav-summary">
-        {{ trim .Summary "." | safeHTML }}&hellip;
-        <a class="posts-nav-summary-more" href="{{ .RelPermalink }}">more &raquo;</a>
-      </p>
     </li>
     {{ end }}
   </ul>

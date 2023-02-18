@@ -18,11 +18,6 @@ style = "algol_nu"
 [params]
 footer = "© 2022 Alex Genco"
 
-[[menus.main]]
-weight = 1
-name = "tags"
-url = "/tags/"
-
 [[menus.socials]]
 weight = 3
 name = "gh"
