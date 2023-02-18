@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Berkeley Mono';
-  src:  url('fonts/BerkeleyMonoVariable-Regular.woff2') format('woff2'),
-        url('fonts/BerkeleyMonoVariable-Regular.woff') format('woff');
+  src: url('/fonts/BerkeleyMonoVariable-Regular.woff2') format('woff2'),
+       url('/fonts/BerkeleyMonoVariable-Regular.woff') format('woff');
 }
 
 :root {
   --width: 700px;
-  --font: "Berkeley Mono", sans-serif;
+  --font: "Berkeley Mono", monospace;
   --font-size: 18px;
   --bg-color: white;
   --fg-color-0: black;
@@ -156,8 +156,7 @@ img {
 
 .post-header {
   display: flex;
-  margin: 2ch 0 2ch 0;
-  padding: 1ch;
+  margin: 2ch 1ch 2ch 0;
   border: thin solid var(--fg-color-0);
   box-shadow: 8px 8px var(--fg-color-2);
   flex-direction: column;
