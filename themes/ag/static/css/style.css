@@ -163,11 +163,12 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 1ch;
 }
 
 .post-header-item {
   font-size: var(--font-size);
-  padding: 0.1ch;
+  padding: 0;
 }
 
 .post-header h1 {
