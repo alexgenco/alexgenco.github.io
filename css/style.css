@@ -1,12 +1,17 @@
-@import url('https://rsms.me/inter/inter.css');
+@font-face {
+  font-family: 'Berkeley Mono';
+  src:  url('fonts/BerkeleyMonoVariable-Regular.woff2') format('woff2'),
+        url('fonts/BerkeleyMonoVariable-Regular.woff') format('woff');
+}
 
 :root {
   --width: 700px;
-  --font: Inter, sans-serif;
+  --font: "Berkeley Mono", sans-serif;
   --font-size: 18px;
   --bg-color: white;
-  --fg-color-1: #613DC1;
-  --fg-color-2: #E8DBC5;
+  --fg-color-0: black;
+  --fg-color-1: #7800ed;
+  --fg-color-2: #00eced;
 }
 
 /* https://www.joshwcomeau.com/css/custom-css-reset */
@@ -41,6 +46,7 @@ body {
   background: var(--bg-color);
   font-family: var(--font);
   font-size: var(--font-size);
+  color: var(--fg-color-0);
 }
 
 a, a:visited, a:active, a:hover {
@@ -52,7 +58,7 @@ h1, h2, h3, p {
 }
 
 blockquote {
-  border-left: 5px solid #ccc;
+  border-left: thin solid var(--fg-color-0);
   margin: 2ch;
   padding: 1ch;
   font-style: italic;
@@ -60,7 +66,7 @@ blockquote {
 
 pre code {
   display: block;
-  border: thin dotted black;
+  border: thin solid var(--fg-color-0);
   line-height: 1.2;
   margin: 2ch 0 2ch 0;
   padding: 1ch;
@@ -102,7 +108,7 @@ img {
 }
 
 .main-nav-item a {
-  color: white;
+  color: var(--bg-color);
   text-decoration: none;
 }
 
@@ -112,7 +118,7 @@ img {
 
 .main-footer {
   margin-top: 2ch;
-  border-top: thin solid black;
+  border-top: thin solid var(--fg-color-0);
 }
 
 .main-footer-items {
@@ -151,10 +157,9 @@ img {
 .post-header {
   display: flex;
   margin: 2ch 0 2ch 0;
-  background: var(--fg-color-2);
   padding: 1ch;
-  border: thin dotted black;
-  border-radius: 0.5ch;
+  border: thin solid var(--fg-color-0);
+  box-shadow: 8px 8px var(--fg-color-2);
   flex-direction: column;
   align-items: center;
   justify-content: center;
